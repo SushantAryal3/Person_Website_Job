@@ -4,7 +4,7 @@ import { navLinks } from "@/constant/link";
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 const sectionBackgrounds: Record<string, string> = {
-  home: "rgba(255, 255, 255, 0.1)",
+  home: "rgba(0, 0, 0, 0.15)",
   "home-mid": "#f2e9e4",
   about: "#f2e9e4",
   experience: "#f2e9e4",
@@ -142,7 +142,7 @@ const NavigationBar = () => {
   return (
     <>
       <nav
-        className={`h-[7vh] w-full border-b z-[30] fixed top-0 left-0 transition-colors duration-700 ease-in-out ${theme.border}`}
+        className={`h-[7vh] w-full border-b z-[30] fixed top-0 left-0 backdrop-blur-sm transition-colors duration-700 ease-in-out ${theme.border}`}
         style={{
           backgroundColor: isMenuOpen ? "#f2e9e4" : sectionBackgrounds[activeSection],
         }}
