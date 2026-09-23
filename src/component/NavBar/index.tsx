@@ -4,7 +4,7 @@ import { navLinks } from "@/constant/link";
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 const sectionBackgrounds: Record<string, string> = {
-  home: "rgba(0, 0, 0, 0.15)",
+  home: "rgba(0, 0, 0, 0.03)",
   "home-mid": "#f2e9e4",
   about: "#f2e9e4",
   experience: "#f2e9e4",
